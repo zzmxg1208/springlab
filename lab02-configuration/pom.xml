@@ -13,6 +13,7 @@
         <module>01-xmlbased</module>
         <module>02-jsr330Annotation</module>
         <module>03-springProprietaryAnnotation</module>
+        <module>04-javabased</module>
     </modules>
 
 

@@ -5,7 +5,7 @@ import javax.inject.Named;
 /**
  * Created by zzhang4 on 2020/12/8
  */
-@Named("account")
+@Named("account2.1")
 public class Account {
     private int id=1;
     private String name="Jack";

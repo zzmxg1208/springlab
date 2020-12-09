@@ -9,7 +9,7 @@ public class SpringTest {
     @Test
     public void testCase1(){
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
-        Account account = (Account)ctx.getBean("account");
+        Account account = (Account)ctx.getBean("account2.1",Account.class);
         System.out.println(account);
         ctx.close();
     }
