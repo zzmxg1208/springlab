@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="address3.1" class="com.example.spring.lab.Address" >
+        <property name="id" value="1"/>
+        <property name="country" value="CN"></property>
+        <property name="street" value="Road. Dongfang"></property>
+        <property name="zip" value="10000"></property>
+    </bean>
+    <bean id="user3.1" class="com.example.spring.lab.User">
+        <property name="id" value="1"></property>
+        <property name="address" ref="address3.1"/>
+    </bean>
+
+    <bean id="user2_3.1" class="com.example.spring.lab.User2">
+        <constructor-arg name="id" value="2"></constructor-arg>
+        <constructor-arg name="address" ref="address3.1"/>
+    </bean>
+
+
+</beans>
