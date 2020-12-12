@@ -14,3 +14,7 @@ IOC:Inversion of Control (IoC) is a design pattern that addresses a component’
     DI
     Lifecycle
     Configuration
+    
+https://www.springbyexample.org/examples/preface-a-little-history.html
+    
+    
