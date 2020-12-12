@@ -31,6 +31,19 @@ EJB's goal is good, but it's practice is bad.
     
     Enterprise Java Bean (EJB) was the Java EE way for creating enterprise applications 
     without worrying about middleware requirements such as transaction management, persistence, security, distribution, remoting etc. 
+    
+    The EJB Specification is a subset of the JavaEE specification,
+    It was the 1st technologies designed to make server-side enterprise application 
+    development in java earily.
+    It shouldered  the Java developers' burden of things(such as concurrency, security,
+    persistence, txn....etc) over to the implementing application
+    server's containers(which handled them seamlessly).
+    
+    comparied to the EJB model and its heavyweight containers, 
+    The Spring provides a 'lightweight container' to run the java enterprise application(and , it 
+    also offer some functionalities as the ejb conainers offered...),It is a big step forwarded...
+    
+    
   
 **Problems with the older EJB Model**
 
@@ -45,3 +58,7 @@ even if you don’t need them, such as ejbCreate, ejbPassivate and ejbActivate.
 * You need an EJB container to execute EJBs. EJB container is part of application servers such as JBoss, Websphere, Weblogic etc., but is not part of lighter web containers like Apache Tomcat. 
 
 * Due to the requirement of an EJB container, it is difficult to unit test EJB components such as session and entity beans outside a container.
+
+
+More DOC:
+https://www.baeldung.com/spring-bean-vs-ejb
