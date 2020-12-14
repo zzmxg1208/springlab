@@ -61,4 +61,7 @@ even if you don’t need them, such as ejbCreate, ejbPassivate and ejbActivate.
 
 
 More DOC:
+
 https://www.baeldung.com/spring-bean-vs-ejb
+https://spring.io/projects/spring-framework#learn
+https://docs.spring.io/spring-framework/docs/current/reference/html/overview.html#overview
