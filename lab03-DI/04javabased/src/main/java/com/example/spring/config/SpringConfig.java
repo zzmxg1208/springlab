@@ -10,14 +10,25 @@ import org.springframework.context.annotation.Configuration;
  * Created by zzhang4 on 2020/12/10
  */
 //@Configuration
-//@ComponentScan(basePackages = {"a.b"})
     //why here if i comment any one of above annotation(one or both..even set the componentscan package name
     //to an invalid one, the test can still PASS????
 
 
+    /**
+     * case1:
+     *  if comment out @Configuration & set findUser() to private OR public , will cause SpringTest PASS.
+     *
+     * case2:
+     *  if open @Configuration and set findUser to private, will cause SpringTest FAILURE.
+     *
+     * case3:
+     *
+     *
+     * */
+
 public class SpringConfig {
     @Bean
-    public USER findUser(){
+    private USER findUser(){
         USER user = new USER();
         return user;
     }

@@ -1,0 +1,28 @@
+{
+  "orderId": 1,
+  "totalPrice": 99.99,
+  "orderDate": "2020-11-11",
+  "productList": [
+    {
+      "productId": 1,
+      "productName": "RICE",
+      "category": {
+        "desc": "eating"
+      }
+    },
+    {
+      "productId": 2,
+      "productName": "wine",
+      "category": {
+        "desc": "drinking"
+      }
+    },
+    {
+      "productId": 3,
+      "productName": "toy",
+      "category": {
+        "desc": "forFun"
+      }
+    }
+  ]
+}
