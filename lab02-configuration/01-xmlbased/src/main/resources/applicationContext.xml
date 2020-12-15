@@ -8,6 +8,15 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="account" class="com.example.spring.lab.Account" />
+    <alias name="account" alias="acct01.1"/>
 
+    <bean id="clientService" class="com.example.spring.lab.ClientService"
+        factory-method="createInstance"/>
+
+    <bean id="serviceLocator" class="com.example.spring.lab.ServiceLocator"
+            />
+    <bean id="clientService2"
+            factory-bean="serviceLocator"
+            factory-method="createClientServiceInstance"/>
 
 </beans>

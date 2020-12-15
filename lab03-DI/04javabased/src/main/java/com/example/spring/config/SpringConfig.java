@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Created by zzhang4 on 2020/12/10
  */
-//@Configuration
+@Configuration
     //why here if i comment any one of above annotation(one or both..even set the componentscan package name
     //to an invalid one, the test can still PASS????
 
@@ -28,7 +28,8 @@ import org.springframework.context.annotation.Configuration;
 
 public class SpringConfig {
     @Bean
-    private USER findUser(){
+    public USER findUser(){
+        System.out.println("SpringConfig....");
         USER user = new USER();
         return user;
     }

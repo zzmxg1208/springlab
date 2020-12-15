@@ -12,7 +12,11 @@ public class SpringTest {
         AnnotationConfigApplicationContext configApplicationContext  = new AnnotationConfigApplicationContext(SpringConfig.class);
 
         USER user = configApplicationContext.getBean(USER.class);
-        System.out.println(user);
+        System.out.println("USER: "+user);
+
+        //UserConfig config = configApplicationContext.getBean(UserConfig.class);
+		//System.out.println(config);
+
         configApplicationContext.close();
     }
 }
